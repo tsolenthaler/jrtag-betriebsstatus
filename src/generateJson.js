@@ -54,7 +54,7 @@ function createFeedItem(entry, tag, sourceType) {
   return {
     id,
     title,
-    url: `https://demo.tourismusweb.site/preview.php/de/index/${slug}-${id}.html`,
+    url: `https://demo.tourismusweb.site/de/index/${slug}-${id}.html`,
     date_published: currentTimestamp,
     _state: mapState(entry.status),
     _stateRaw: mapStateRaw(entry.status),
