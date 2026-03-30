@@ -88,6 +88,6 @@ return {
     version: 'https://jsonfeed.org/version/1',
     title: `RSS Feed ${tenantName}`,
     description: `Alle Stories für ${tenantName}`,
-    items
+    items: items
   }]
 };
