@@ -1,6 +1,3 @@
-from datetime import datetime, timezone
-
-
 def map_status(status_code):
     if status_code == 0:
         return "closed"
@@ -120,40 +117,34 @@ def build_output(tenants, pub_date):
     return result
 
 
-def extract_tenants_from_n8n_input():
-    # Python Code Node: bevorzugt _input.all()
-    input_obj = globals().get("_input")
-    if input_obj is not None:
-        n8n_items = input_obj.all()
-        tenants = []
-
-        for item in n8n_items:
-            payload = item.get("json", item)
-            if isinstance(payload, list):
-                tenants.extend([x for x in payload if isinstance(x, dict)])
-            elif isinstance(payload, dict):
-                tenants.append(payload)
-
-        return tenants
-
-    # Fallback: falls lokal als Python-Skript getestet wird
-    fallback_items = globals().get("items")
-    if isinstance(fallback_items, list):
-        tenants = []
-        for item in fallback_items:
-            payload = item.get("json", item) if isinstance(item, dict) else item
-            if isinstance(payload, list):
-                tenants.extend([x for x in payload if isinstance(x, dict)])
-            elif isinstance(payload, dict):
-                tenants.append(payload)
-        return tenants
-
-    return []
+def extract_tenants_from_items(items):
+    tenants = []
+    for item in items:
+        payload = item.get("json", item)
+        if isinstance(payload, list):
+            for entry in payload:
+                if isinstance(entry, dict):
+                    tenants.append(entry)
+        elif isinstance(payload, dict):
+            tenants.append(payload)
+    return tenants
 
 
-def run_n8n_code():
-    pub_date = datetime.now(timezone.utc).isoformat().replace("+00:00", "Z")
-    tenants = extract_tenants_from_n8n_input()
+def resolve_pub_date(tenants):
+    # In n8n Cloud Python sind Imports eingeschraenkt. Darum kein datetime.now().
+    # Falls vorhanden, verwenden wir ein vorhandenes Feld aus den Daten.
+    for tenant in tenants:
+        for item in iter_items(tenant):
+            updated = item.get("updated")
+            if isinstance(updated, str) and updated:
+                return updated
+    return "1970-01-01T00:00:00Z"
+
+
+def run_n8n_code(items):
+    # Native Python (All Items): Eingabe kommt ueber _items
+    tenants = extract_tenants_from_items(items)
+    pub_date = resolve_pub_date(tenants)
     output_data = build_output(tenants, pub_date)
 
     # n8n erwartet eine Liste von Items mit json-Property
@@ -161,5 +152,5 @@ def run_n8n_code():
 
 
 # In n8n Python Code Node als letzte Zeile verwenden:
-# return run_n8n_code()
-preview_output = run_n8n_code()
+# return run_n8n_code(_items)
+preview_output = run_n8n_code([])
