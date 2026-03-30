@@ -138,25 +138,66 @@ function processTenant(tenant) {
 const rssItemsLifts = lifts.map(lift => {
   const status = mapStatus(lift.status);
   const pubDate = lift.updated || new Date().toISOString();
-  const slug = createSlug(lift.name.de);
-  
+  const title = getName(lift.name);
+  const slug = createSlug(title);
+
   return `    <item>
-      <title>${lift.name.de}</title>
+      <title>${title}</title>
       <link>https://demo.tourismusweb.site/preview.php/de/index/${slug}-${lift.id}.html</link>
       <guid>${lift.id}</guid>
       <pubDate>${pubDate}</pubDate>
       <status>${status}</status>
-      <tag>Analage</tag>
+      <tag>Anlage</tag>
       <sourceTenant>${tenantName}</sourceTenant>
-      <sourceType>${lift.type}</sourceType>
+      <sourceType>lifts</sourceType>
     </item>`;
 }).join('\n\n');
+
+const rssItemsSlopes = slopes.map(slope => {
+  const status = mapStatus(slope.status);
+  const pubDate = slope.updated || new Date().toISOString();
+  const title = getName(slope.name);
+  const slug = createSlug(title);
+
+  return `    <item>
+      <title>${title}</title>
+      <link>https://demo.tourismusweb.site/preview.php/de/index/${slug}-${slope.id}.html</link>
+      <guid>${slope.id}</guid>
+      <pubDate>${pubDate}</pubDate>
+      <status>${status}</status>
+      <tag>Piste</tag>
+      <sourceTenant>${tenantName}</sourceTenant>
+      <sourceType>slopes</sourceType>
+    </item>`;
+}).join('\n\n');
+
+const rssItemsTrails = trails.map(trail => {
+  const status = mapStatus(trail.status);
+  const pubDate = trail.updated || new Date().toISOString();
+  const title = getName(trail.name);
+  const slug = createSlug(title);
+
+  return `    <item>
+      <title>${title}</title>
+      <link>https://demo.tourismusweb.site/preview.php/de/index/${slug}-${trail.id}.html</link>
+      <guid>${trail.id}</guid>
+      <pubDate>${pubDate}</pubDate>
+      <status>${status}</status>
+      <tag>Trail</tag>
+      <sourceTenant>${tenantName}</sourceTenant>
+      <sourceType>trails</sourceType>
+    </item>`;
+}).join('\n\n');
+
+const rssItems = [rssItemsLifts, rssItemsSlopes, rssItemsTrails]
+  .filter(Boolean)
+  .join('\n\n');
 
 const rssFeed = `<?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0">
   <channel>
     <title>${tenantName}</title>
-${rssItemsLifts}
+${rssItems}
   </channel>
 </rss>`;
 
