@@ -51,18 +51,16 @@ function createFeedItem(entry, tag, sourceType) {
   const slug = createSlug(title);
   const id = String(entry.id || '');
 
-  return {
-    id,
-    title,
-    url: `https://demo.tourismusweb.site/de/index/${slug}-${id}.html`,
-    date_published: currentTimestamp,
-    _state: mapState(entry.status),
-    _stateRaw: mapStateRaw(entry.status),
-    _tags: tag,
-    _sort: entry.sort ?? null,
-    sourceTenant: tenantName,
-    sourceType
-  };
+  return `{"id": ${id},
+          "title": ${id},
+          url: "https://demo.tourismusweb.site/de/index/${slug}-${id}.html",
+          "date_published": "${currentTimestamp}",
+          "_state": "${mapState(entry.status)}",
+          "_stateRaw": "${mapStateRaw(entry.status)}",
+          "_tags": "${tag}",
+          "sourceTenant": "${tenantName}",
+          "sourceType": "${sourceType}"}
+        `;
 }
 
 const items = [
@@ -84,10 +82,12 @@ items.forEach(item => delete item._sort);
 return {
   tenantName,
   fileName: createSlug(tenantName),
-  feed: [{
-    version: 'https://jsonfeed.org/version/1',
-    title: `RSS Feed ${tenantName}`,
-    description: `Alle Stories für ${tenantName}`,
-    items: items
-  }]
+  feed: `
+    version: "https://jsonfeed.org/version/1",
+    title: "RSS Feed ${tenantName}",
+    description: "Alle Stories für ${tenantName}",
+    items: [
+        ${items}
+    ]
+    `
 };
