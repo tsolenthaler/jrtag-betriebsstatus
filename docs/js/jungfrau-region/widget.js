@@ -1,15 +1,15 @@
 /* Betriebsstatus Widget – Jungfrau Region
  * Embed: <div data-bss="jungfrau-region"></div>
- *        <script src="https://tsolenthaler.github.io/jrtag-betriebsstatus/js/jungfrau-region/widget.js" defer></script>
+ *        <script src="https://tso-ag.github.io/jrtag-betriebsstatus/js/jungfrau-region/widget.js" defer></script>
  * Or use the universal loader:
- *        <div class="bss-widget" data-bss-tenant="jungfrau-region" data-bss-base="https://tsolenthaler.github.io/jrtag-betriebsstatus"></div>
- *        <script src="https://tsolenthaler.github.io/jrtag-betriebsstatus/js/widget.js" defer></script>
+ *        <div class="bss-widget" data-bss-tenant="jungfrau-region" data-bss-base="https://tso-ag.github.io/jrtag-betriebsstatus"></div>
+ *        <script src="https://tso-ag.github.io/jrtag-betriebsstatus/js/widget.js" defer></script>
  */
 (function () {
   'use strict';
 
-  var API_URL = 'https://tsolenthaler.github.io/jrtag-betriebsstatus/api/jungfrau-region/feed.json';
-  var DETAIL_URL = 'https://tsolenthaler.github.io/jrtag-betriebsstatus/operating-status/jungfrau-region/';
+  var API_URL = 'https://tso-ag.github.io/jrtag-betriebsstatus/api/jungfrau-region/feed.json';
+  var DETAIL_URL = 'https://tso-ag.github.io/jrtag-betriebsstatus/operating-status/jungfrau-region/';
   var CSS_ID = 'bss-style-jungfrau_region';
 
   var STATUS_COLOR = {

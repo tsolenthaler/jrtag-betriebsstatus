@@ -1,15 +1,15 @@
 /* Betriebsstatus Widget – Mürren-Schilthorn
  * Embed: <div data-bss="muerren-schilthorn"></div>
- *        <script src="https://tsolenthaler.github.io/jrtag-betriebsstatus/js/muerren-schilthorn/widget.js" defer></script>
+ *        <script src="https://tso-ag.github.io/jrtag-betriebsstatus/js/muerren-schilthorn/widget.js" defer></script>
  * Or use the universal loader:
- *        <div class="bss-widget" data-bss-tenant="muerren-schilthorn" data-bss-base="https://tsolenthaler.github.io/jrtag-betriebsstatus"></div>
- *        <script src="https://tsolenthaler.github.io/jrtag-betriebsstatus/js/widget.js" defer></script>
+ *        <div class="bss-widget" data-bss-tenant="muerren-schilthorn" data-bss-base="https://tso-ag.github.io/jrtag-betriebsstatus"></div>
+ *        <script src="https://tso-ag.github.io/jrtag-betriebsstatus/js/widget.js" defer></script>
  */
 (function () {
   'use strict';
 
-  var API_URL = 'https://tsolenthaler.github.io/jrtag-betriebsstatus/api/muerren-schilthorn/feed.json';
-  var DETAIL_URL = 'https://tsolenthaler.github.io/jrtag-betriebsstatus/operating-status/muerren-schilthorn/';
+  var API_URL = 'https://tso-ag.github.io/jrtag-betriebsstatus/api/muerren-schilthorn/feed.json';
+  var DETAIL_URL = 'https://tso-ag.github.io/jrtag-betriebsstatus/operating-status/muerren-schilthorn/';
   var CSS_ID = 'bss-style-muerren_schilthorn';
 
   var STATUS_COLOR = {

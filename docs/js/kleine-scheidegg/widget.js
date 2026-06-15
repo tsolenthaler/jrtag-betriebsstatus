@@ -1,15 +1,15 @@
 /* Betriebsstatus Widget – Kleine Scheidegg
  * Embed: <div data-bss="kleine-scheidegg"></div>
- *        <script src="https://tsolenthaler.github.io/jrtag-betriebsstatus/js/kleine-scheidegg/widget.js" defer></script>
+ *        <script src="https://tso-ag.github.io/jrtag-betriebsstatus/js/kleine-scheidegg/widget.js" defer></script>
  * Or use the universal loader:
- *        <div class="bss-widget" data-bss-tenant="kleine-scheidegg" data-bss-base="https://tsolenthaler.github.io/jrtag-betriebsstatus"></div>
- *        <script src="https://tsolenthaler.github.io/jrtag-betriebsstatus/js/widget.js" defer></script>
+ *        <div class="bss-widget" data-bss-tenant="kleine-scheidegg" data-bss-base="https://tso-ag.github.io/jrtag-betriebsstatus"></div>
+ *        <script src="https://tso-ag.github.io/jrtag-betriebsstatus/js/widget.js" defer></script>
  */
 (function () {
   'use strict';
 
-  var API_URL = 'https://tsolenthaler.github.io/jrtag-betriebsstatus/api/kleine-scheidegg/feed.json';
-  var DETAIL_URL = 'https://tsolenthaler.github.io/jrtag-betriebsstatus/operating-status/kleine-scheidegg/';
+  var API_URL = 'https://tso-ag.github.io/jrtag-betriebsstatus/api/kleine-scheidegg/feed.json';
+  var DETAIL_URL = 'https://tso-ag.github.io/jrtag-betriebsstatus/operating-status/kleine-scheidegg/';
   var CSS_ID = 'bss-style-kleine_scheidegg';
 
   var STATUS_COLOR = {

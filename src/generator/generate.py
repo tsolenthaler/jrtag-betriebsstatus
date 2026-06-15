@@ -27,7 +27,7 @@ from xml.sax.saxutils import escape as xe
 # Configuration
 # ---------------------------------------------------------------------------
 API_URL = "https://export.siscontrol.ch/sismedia/json/B1463C13-F6D8-4270-8C0B-0CFF9E135E62"
-DEFAULT_BASE_URL = "https://tsolenthaler.github.io/jrtag-betriebsstatus"
+DEFAULT_BASE_URL = "https://tso-ag.github.io/jrtag-betriebsstatus/"
 DEFAULT_SITE_LINK = "https://demo.tourismusweb.site"
 
 # Status code → German label

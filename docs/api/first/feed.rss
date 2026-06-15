@@ -2,15 +2,15 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Betriebsstatus First</title>
-    <link>https://tsolenthaler.github.io/jrtag-betriebsstatus/operating-status/first/</link>
+    <link>https://tso-ag.github.io/jrtag-betriebsstatus/operating-status/first/</link>
     <description>Betriebsstatus für First</description>
-    <lastBuildDate>15.06.2026 05:28</lastBuildDate>
-    <atom:link href="https://tsolenthaler.github.io/jrtag-betriebsstatus/api/first/feed.rss" rel="self" type="application/rss+xml"/>
+    <lastBuildDate>15.06.2026 05:36</lastBuildDate>
+    <atom:link href="https://tso-ag.github.io/jrtag-betriebsstatus/api/first/feed.rss" rel="self" type="application/rss+xml"/>
     <item>
       <title>bodmiARENA</title>
       <link>https://demo.tourismusweb.site/de/index/bodmiarena-126.html</link>
       <guid isPermaLink="false">126</guid>
-      <pubDate>15.06.2026 05:28</pubDate>
+      <pubDate>15.06.2026 05:36</pubDate>
       <status>closed</status>
       <tag>Anlage</tag>
       <sourceTenant>First</sourceTenant>
@@ -21,7 +21,7 @@
       <title>bodmiLIFT</title>
       <link>https://demo.tourismusweb.site/de/index/bodmilift-127.html</link>
       <guid isPermaLink="false">127</guid>
-      <pubDate>15.06.2026 05:28</pubDate>
+      <pubDate>15.06.2026 05:36</pubDate>
       <status>closed</status>
       <tag>Anlage</tag>
       <sourceTenant>First</sourceTenant>
@@ -32,7 +32,7 @@
       <title>Grindelwald – Bort</title>
       <link>https://demo.tourismusweb.site/de/index/grindelwald-bort-128.html</link>
       <guid isPermaLink="false">128</guid>
-      <pubDate>15.06.2026 05:28</pubDate>
+      <pubDate>15.06.2026 05:36</pubDate>
       <status>open</status>
       <tag>Anlage</tag>
       <sourceTenant>First</sourceTenant>
@@ -43,7 +43,7 @@
       <title>Bärgelegg</title>
       <link>https://demo.tourismusweb.site/de/index/baergelegg-130.html</link>
       <guid isPermaLink="false">130</guid>
-      <pubDate>15.06.2026 05:28</pubDate>
+      <pubDate>15.06.2026 05:36</pubDate>
       <status>disabled</status>
       <tag>Anlage</tag>
       <sourceTenant>First</sourceTenant>
@@ -54,7 +54,7 @@
       <title>Grindel</title>
       <link>https://demo.tourismusweb.site/de/index/grindel-131.html</link>
       <guid isPermaLink="false">131</guid>
-      <pubDate>15.06.2026 05:28</pubDate>
+      <pubDate>15.06.2026 05:36</pubDate>
       <status>disabled</status>
       <tag>Anlage</tag>
       <sourceTenant>First</sourceTenant>
@@ -65,7 +65,7 @@
       <title>Bort – Schreckfeld</title>
       <link>https://demo.tourismusweb.site/de/index/bort-schreckfeld-132.html</link>
       <guid isPermaLink="false">132</guid>
-      <pubDate>15.06.2026 05:28</pubDate>
+      <pubDate>15.06.2026 05:36</pubDate>
       <status>open</status>
       <tag>Anlage</tag>
       <sourceTenant>First</sourceTenant>
@@ -76,7 +76,7 @@
       <title>Schreckfeld – First</title>
       <link>https://demo.tourismusweb.site/de/index/schreckfeld-first-134.html</link>
       <guid isPermaLink="false">134</guid>
-      <pubDate>15.06.2026 05:28</pubDate>
+      <pubDate>15.06.2026 05:36</pubDate>
       <status>open</status>
       <tag>Anlage</tag>
       <sourceTenant>First</sourceTenant>
@@ -87,7 +87,7 @@
       <title>Hohwald</title>
       <link>https://demo.tourismusweb.site/de/index/hohwald-135.html</link>
       <guid isPermaLink="false">135</guid>
-      <pubDate>15.06.2026 05:28</pubDate>
+      <pubDate>15.06.2026 05:36</pubDate>
       <status>disabled</status>
       <tag>Anlage</tag>
       <sourceTenant>First</sourceTenant>
@@ -98,7 +98,7 @@
       <title>Oberjoch</title>
       <link>https://demo.tourismusweb.site/de/index/oberjoch-136.html</link>
       <guid isPermaLink="false">136</guid>
-      <pubDate>15.06.2026 05:28</pubDate>
+      <pubDate>15.06.2026 05:36</pubDate>
       <status>open</status>
       <tag>Anlage</tag>
       <sourceTenant>First</sourceTenant>
@@ -109,7 +109,7 @@
       <title>Schilt</title>
       <link>https://demo.tourismusweb.site/de/index/schilt-137.html</link>
       <guid isPermaLink="false">137</guid>
-      <pubDate>15.06.2026 05:28</pubDate>
+      <pubDate>15.06.2026 05:36</pubDate>
       <status>disabled</status>
       <tag>Anlage</tag>
       <sourceTenant>First</sourceTenant>
@@ -120,7 +120,7 @@
       <title>Grindelwald – Pfingstegg</title>
       <link>https://demo.tourismusweb.site/de/index/grindelwald-pfingstegg-163.html</link>
       <guid isPermaLink="false">163</guid>
-      <pubDate>15.06.2026 05:28</pubDate>
+      <pubDate>15.06.2026 05:36</pubDate>
       <status>disabled</status>
       <tag>Anlage</tag>
       <sourceTenant>First</sourceTenant>

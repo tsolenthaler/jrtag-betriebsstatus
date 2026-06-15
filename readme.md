@@ -29,14 +29,14 @@ Tenants: Kleine Scheidegg · First · Jungfrau Region · Mürren-Schilthorn
 ### Per-Tenant Widget (einfachste Methode)
 ```html
 <div data-bss="kleine-scheidegg"></div>
-<script src="https://tsolenthaler.github.io/jrtag-betriebsstatus/js/kleine-scheidegg/widget.js" defer></script>
+<script src="https://tso-ag.github.io/jrtag-betriebsstatus/js/kleine-scheidegg/widget.js" defer></script>
 ```
 
 ### Universeller Loader (ein Script, mehrere Tenants)
 ```html
 <div class="bss-widget" data-bss-tenant="kleine-scheidegg"
-     data-bss-base="https://tsolenthaler.github.io/jrtag-betriebsstatus"></div>
-<script src="https://tsolenthaler.github.io/jrtag-betriebsstatus/js/widget.js" defer></script>
+     data-bss-base="https://tso-ag.github.io/jrtag-betriebsstatus/"></div>
+<script src="https://tso-ag.github.io/jrtag-betriebsstatus/js/widget.js" defer></script>
 ```
 
 ## Lokale Ausführung
@@ -44,7 +44,7 @@ Tenants: Kleine Scheidegg · First · Jungfrau Region · Mürren-Schilthorn
 ```bash
 python src/generator/generate.py \
   --output docs \
-  --base-url "https://tsolenthaler.github.io/jrtag-betriebsstatus"
+  --base-url "https://tso-ag.github.io/jrtag-betriebsstatus/"
 ```
 
 Mit lokalem Input (ohne API-Aufruf):
