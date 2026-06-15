@@ -24,14 +24,15 @@
   * { box-sizing: border-box; margin: 0; padding: 0; }
   body { font-family: system-ui, -apple-system, sans-serif; background: var(--bg);
          color: var(--text); line-height: 1.5; }
-  header { background: #1e3a5f; color: #fff; padding: 1.5rem 1.25rem 1rem; }
+  header { background: #ffffff; color: var(--text); padding: 1.5rem 1.25rem 1rem;
+           border-bottom: 1px solid var(--border); }
   header h1 { font-size: 1.5rem; font-weight: 700; }
-  header p  { font-size: .85rem; opacity: .75; margin-top: .25rem; }
+  header p  { font-size: .85rem; color: var(--muted); margin-top: .25rem; }
   .summary  { display: flex; flex-wrap: wrap; gap: .75rem;
-              padding: 1rem 1.25rem; background: #1e3a5f; border-top: 1px solid rgba(255,255,255,.15); }
-  .summary-badge { background: rgba(255,255,255,.12); border-radius: 999px;
-                   padding: .2rem .75rem; font-size: .8rem; color: #e2e8f0; }
-  .summary-badge strong { color: #fff; }
+              padding: 1rem 1.25rem; background: #f8fafc; border-top: 1px solid var(--border); }
+  .summary-badge { background: #e2e8f0; border-radius: 999px;
+                   padding: .2rem .75rem; font-size: .8rem; color: var(--muted); }
+  .summary-badge strong { color: var(--text); }
   main { max-width: 900px; margin: 1.5rem auto; padding: 0 1rem; }
   .section { background: var(--card); border: 1px solid var(--border);
              border-radius: .75rem; margin-bottom: 1.25rem; overflow: hidden; }
@@ -74,7 +75,7 @@
 <body>
   <header>
     <h1>Betriebsstatus First</h1>
-    <p>Zuletzt aktualisiert: 15.06.2026 11:46</p>
+    <p>Zuletzt aktualisiert: 15.06.2026 11:50</p>
     <div class="summary">
         <span class="summary-badge"><strong>4/11</strong> Anlagen offen</span>
         <span class="summary-badge"><strong>0/40</strong> Pisten offen</span>

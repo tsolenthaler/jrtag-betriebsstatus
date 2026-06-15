@@ -294,14 +294,15 @@ _HTML_CSS = """
   * { box-sizing: border-box; margin: 0; padding: 0; }
   body { font-family: system-ui, -apple-system, sans-serif; background: var(--bg);
          color: var(--text); line-height: 1.5; }
-  header { background: #1e3a5f; color: #fff; padding: 1.5rem 1.25rem 1rem; }
+  header { background: #ffffff; color: var(--text); padding: 1.5rem 1.25rem 1rem;
+           border-bottom: 1px solid var(--border); }
   header h1 { font-size: 1.5rem; font-weight: 700; }
-  header p  { font-size: .85rem; opacity: .75; margin-top: .25rem; }
+  header p  { font-size: .85rem; color: var(--muted); margin-top: .25rem; }
   .summary  { display: flex; flex-wrap: wrap; gap: .75rem;
-              padding: 1rem 1.25rem; background: #1e3a5f; border-top: 1px solid rgba(255,255,255,.15); }
-  .summary-badge { background: rgba(255,255,255,.12); border-radius: 999px;
-                   padding: .2rem .75rem; font-size: .8rem; color: #e2e8f0; }
-  .summary-badge strong { color: #fff; }
+              padding: 1rem 1.25rem; background: #f8fafc; border-top: 1px solid var(--border); }
+  .summary-badge { background: #e2e8f0; border-radius: 999px;
+                   padding: .2rem .75rem; font-size: .8rem; color: var(--muted); }
+  .summary-badge strong { color: var(--text); }
   main { max-width: 900px; margin: 1.5rem auto; padding: 0 1rem; }
   .section { background: var(--card); border: 1px solid var(--border);
              border-radius: .75rem; margin-bottom: 1.25rem; overflow: hidden; }
@@ -837,9 +838,9 @@ def build_index_html(tenants: list[dict], pub_date: str, base_url: str) -> str:
   <style>
     * {{ box-sizing: border-box; margin: 0; padding: 0; }}
     body {{ font-family: system-ui, sans-serif; background: #f8fafc; color: #1e293b; }}
-    header {{ background: #1e3a5f; color: #fff; padding: 2rem 1.5rem; }}
+    header {{ background: #ffffff; color: #1e293b; padding: 2rem 1.5rem; border-bottom: 1px solid #e2e8f0; }}
     header h1 {{ font-size: 1.75rem; font-weight: 700; }}
-    header p  {{ margin-top: .4rem; opacity: .75; font-size: .9rem; }}
+    header p  {{ margin-top: .4rem; color: #64748b; font-size: .9rem; }}
     main {{ max-width: 900px; margin: 2rem auto; padding: 0 1rem;
             display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1rem; }}
     .card {{ background: #fff; border: 1px solid #e2e8f0; border-radius: .75rem;
