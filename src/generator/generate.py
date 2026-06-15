@@ -307,7 +307,13 @@ _HTML_CSS = """
              border-radius: .75rem; margin-bottom: 1.25rem; overflow: hidden; }
   .section-header { padding: .75rem 1rem; background: #f1f5f9;
                     border-bottom: 1px solid var(--border);
-                    display: flex; align-items: center; gap: .5rem; }
+                    display: flex; align-items: center; gap: .5rem;
+                    cursor: pointer; }
+  .section-header:hover { background: #e8edf4; }
+  .section-header:focus-visible { outline: 2px solid #1e3a5f; outline-offset: -2px; }
+  .section-header::after { content: "▾"; margin-left: .5rem; color: var(--muted);
+                           font-size: .9rem; transition: transform .2s ease; }
+  .section-header[aria-expanded="false"]::after { transform: rotate(-90deg); }
   .section-header h2 { font-size: 1rem; font-weight: 600; flex: 1; }
   .section-count { font-size: .8rem; color: var(--muted); }
   .item-list { list-style: none; }
@@ -327,6 +333,7 @@ _HTML_CSS = """
   .state-open        { color: var(--open); font-weight: 600; }
   .state-closed      { color: var(--closed); }
   .state-preparation { color: var(--prep); }
+  .item-list.is-collapsed { display: none; }
   footer { text-align: center; padding: 2rem 1rem; font-size: .78rem; color: var(--muted); }
   @media (max-width: 480px) {
     header h1 { font-size: 1.2rem; }
@@ -398,6 +405,37 @@ def build_html_page(tenant: dict, pub_date: str, base_url: str) -> str:
     json_url = h(f"{base_url}/api/{slug}/feed.json")
     index_url = h(f"{base_url}/")
 
+    collapse_script = """<script>
+    (function () {
+      var sectionHeaders = document.querySelectorAll('.section .section-header');
+      sectionHeaders.forEach(function (header) {
+        if (!header.hasAttribute('aria-expanded')) {
+          header.setAttribute('aria-expanded', 'true');
+        }
+        if (header.tagName !== 'BUTTON') {
+          header.setAttribute('role', 'button');
+          header.setAttribute('tabindex', '0');
+        }
+
+        var toggleSection = function () {
+          var list = header.nextElementSibling;
+          if (!list || !list.classList.contains('item-list')) return;
+          var expanded = header.getAttribute('aria-expanded') === 'true';
+          header.setAttribute('aria-expanded', expanded ? 'false' : 'true');
+          list.classList.toggle('is-collapsed', expanded);
+        };
+
+        header.addEventListener('click', toggleSection);
+        header.addEventListener('keydown', function (event) {
+          if (event.key === 'Enter' || event.key === ' ') {
+            event.preventDefault();
+            toggleSection();
+          }
+        });
+      });
+    })();
+  </script>"""
+
     return f"""<!DOCTYPE html>
 <html lang="de">
 <head>
@@ -424,6 +462,7 @@ def build_html_page(tenant: dict, pub_date: str, base_url: str) -> str:
        <a href="{json_url}">JSON</a></p>
     <p style="margin-top:.5rem">Aktualisiert alle 5 Minuten. Daten: Siscontrol SISMedia.</p>
   </footer>
+  {collapse_script}
 </body>
 </html>
 """
