@@ -23,8 +23,12 @@
       '.bss-hdr{background:#1e3a5f;color:#fff;padding:.6rem .9rem;}',
       '.bss-hdr h1{margin:0;font-size:1rem;font-weight:600;}',
       '.bss-hdr p{margin:.15rem 0 0;font-size:.72rem;opacity:.7;}',
-      '.bss-sec h4{margin:0;padding:.4rem .8rem;background:#f1f5f9;',
-      'border-bottom:1px solid #e2e8f0;font-size:.78rem;font-weight:600;color:#475569;}',
+      '.bss-sec{border-top:1px solid #e2e8f0;}',
+      '.bss-sec summary{margin:0;padding:.4rem .8rem;background:#f1f5f9;',
+      'font-size:.78rem;font-weight:600;color:#475569;cursor:pointer;list-style:none;}',
+      '.bss-sec summary::-webkit-details-marker{display:none;}',
+      '.bss-sec summary::after{content:"+";float:right;color:#94a3b8;font-weight:700;}',
+      '.bss-sec[open] summary::after{content:"−";}',
       '.bss-list{list-style:none;margin:0;padding:0;}',
       '.bss-list li{display:flex;align-items:center;gap:.5rem;padding:.4rem .8rem;',
       'border-bottom:1px solid #f1f5f9;}',
@@ -79,8 +83,8 @@
       var grp = groups[tag];
       if (!grp || !grp.length) return;
       var open = grp.filter(function(i) { return i._stateRaw === 'open'; }).length;
-      html += '<div class="bss-sec"><h4>' + esc(tag) +
-              ' <span style="font-weight:400;color:#94a3b8">(' + open + '/' + grp.length + ' offen)</span></h4>' +
+            html += '<details class="bss-sec" open><summary>' + esc(tag) +
+              ' <span style="font-weight:400;color:#94a3b8">(' + open + '/' + grp.length + ' offen)</span></summary>' +
               '<ul class="bss-list">';
       grp.forEach(function(item) {
         var color = STATUS_COLOR[item._stateRaw] || STATUS_COLOR.unknown;
@@ -91,7 +95,7 @@
                 '<span class="bss-state">' + esc(label) + '</span>' +
                 '</li>';
       });
-      html += '</ul></div>';
+      html += '</ul></details>';
     });
     container.innerHTML = html;
   }
