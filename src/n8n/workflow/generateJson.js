@@ -5,7 +5,16 @@ const slopes = Array.isArray(tenant.slopes) ? tenant.slopes : [];
 const trails = Array.isArray(tenant.trails) ? tenant.trails : [];
 const gastros = Array.isArray(tenant.gastros) ? tenant.gastros : [];
 
-const currentTimestamp = new Date().toISOString();
+function formatDateTimeDe(value) {
+  const date = value ? new Date(value) : new Date();
+  if (Number.isNaN(date.getTime())) return String(value || '');
+  return new Intl.DateTimeFormat('de-DE', {
+    day: '2-digit', month: '2-digit', year: 'numeric',
+    hour: '2-digit', minute: '2-digit', hour12: false
+  }).format(date).replace(',', '').trim();
+}
+
+const currentTimestamp = formatDateTimeDe();
 
 // Helper function to extract name (prefer German, fallback to English)
 function getName(nameObj) {

@@ -41,10 +41,19 @@ function createSlug(title) {
     .replace(/^-|-$/g, '');
 }
 
+function formatDateTimeDe(value) {
+  const date = value ? new Date(value) : new Date();
+  if (Number.isNaN(date.getTime())) return String(value || '');
+  return new Intl.DateTimeFormat('de-DE', {
+    day: '2-digit', month: '2-digit', year: 'numeric',
+    hour: '2-digit', minute: '2-digit', hour12: false
+  }).format(date).replace(',', '').trim();
+}
+
 function buildRssItems(entries, tag, sourceType) {
   return entries.map(entry => {
     const status = mapStatus(entry.status);
-    const pubDate = entry.updated || new Date().toISOString();
+    const pubDate = formatDateTimeDe(entry.updated);
     const title = getItemTitle(entry);
     const slug = createSlug(title);
 

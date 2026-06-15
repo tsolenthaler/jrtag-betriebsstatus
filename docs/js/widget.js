@@ -53,6 +53,15 @@
       .replace(/&/g,'&amp;').replace(/</g,'&lt;')
       .replace(/>/g,'&gt;').replace(/"/g,'&quot;');
   }
+  function formatDateTimeDe(value) {
+    if (!value) return '';
+    var date = new Date(value);
+    if (isNaN(date.getTime())) return String(value);
+    return new Intl.DateTimeFormat('de-DE', {
+      day:'2-digit', month:'2-digit', year:'numeric',
+      hour:'2-digit', minute:'2-digit', hour12:false
+    }).format(date).replace(',', '').trim();
+  }
 
   function groupBy(items, key) {
     return items.reduce(function(acc, item) {
@@ -94,7 +103,7 @@
       })
       .then(function(data) {
         var updated = (data.items && data.items[0] && data.items[0].date_published) || '';
-        var d = updated ? new Date(updated).toLocaleString('de-CH') : '';
+        var d = updated ? formatDateTimeDe(updated) : '';
         var hdr = document.createElement('div');
         hdr.className = 'bss-hdr';
         hdr.innerHTML = '<h3>' + esc(data.title || '') + '</h3>' +
@@ -138,3 +147,5 @@
     init();
   }
 }());
+
+

@@ -60,6 +60,15 @@ def get_item_title(item):
     return name or label
 
 
+def format_datetime_de(value):
+    try:
+        from datetime import datetime
+        dt = datetime.fromisoformat(str(value).replace("Z", "+00:00"))
+    except Exception:
+        return str(value)
+    return dt.strftime("%d.%m.%Y %H:%M")
+
+
 def iter_items(tenant):
     for key in ("lifts", "slopes", "trails"):
         values = tenant.get(key, [])
@@ -151,8 +160,8 @@ def resolve_pub_date(tenants):
         for item in iter_items(tenant):
             updated = item.get("updated")
             if isinstance(updated, str) and updated:
-                return updated
-    return "1970-01-01T00:00:00Z"
+                return format_datetime_de(updated)
+    return "01.01.1970 00:00"
 
 
 def run_n8n_code(items):

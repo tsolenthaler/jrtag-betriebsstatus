@@ -167,6 +167,14 @@ def write_file(path: Path, content: str | bytes, encoding: str = "utf-8") -> Non
         path.write_text(content, encoding=encoding)
 
 
+def format_datetime_de(value: str) -> str:
+  try:
+    dt = datetime.fromisoformat(value.replace("Z", "+00:00"))
+  except ValueError:
+    return value
+  return dt.strftime("%d.%m.%Y %H:%M")
+
+
 # ---------------------------------------------------------------------------
 # JSON Feed
 # ---------------------------------------------------------------------------
@@ -403,7 +411,7 @@ def build_html_page(tenant: dict, pub_date: str, base_url: str) -> str:
 <body>
   <header>
     <h1>Betriebsstatus {tenant_name}</h1>
-    <p>Zuletzt aktualisiert: {h(pub_date)}</p>
+    <p>Zuletzt aktualisiert: {h(format_datetime_de(pub_date))}</p>
     <div class="summary">
         {badges_html}
     </div>
@@ -482,6 +490,16 @@ _WIDGET_JS_TEMPLATE = (
     "      .replace(/>/g,'&gt;').replace(/\"/g,'&quot;');\n"
     "  }\n"
     "\n"
+    "  function formatDateTimeDe(value) {\n"
+    "    if (!value) return '';\n"
+    "    var date = new Date(value);\n"
+    "    if (isNaN(date.getTime())) return String(value);\n"
+    "    return new Intl.DateTimeFormat('de-DE', {\n"
+    "      day:'2-digit', month:'2-digit', year:'numeric',\n"
+    "      hour:'2-digit', minute:'2-digit', hour12:false\n"
+    "    }).format(date).replace(',', '').trim();\n"
+    "  }\n"
+    "\n"
     "  function groupBy(items, key) {\n"
     "    return items.reduce(function(acc, item) {\n"
     "      (acc[item[key]] = acc[item[key]] || []).push(item);\n"
@@ -528,7 +546,7 @@ _WIDGET_JS_TEMPLATE = (
     "          })\n"
     "          .then(function(data) {\n"
     "            var updated = (data.items && data.items[0] && data.items[0].date_published) || '';\n"
-    "            var d = updated ? new Date(updated).toLocaleString('de-CH') : '';\n"
+    "            var d = updated ? formatDateTimeDe(updated) : '';\n"
     "            var hdr = document.createElement('div');\n"
     "            hdr.className = 'bss-hdr';\n"
     "            hdr.innerHTML = '<h3>' + esc(data.title || '__TENANT_NAME__') + '</h3>' +\n"
@@ -633,6 +651,16 @@ _UNIVERSAL_WIDGET_JS = r"""/* Betriebsstatus Universal Widget Loader
       .replace(/>/g,'&gt;').replace(/"/g,'&quot;');
   }
 
+  function formatDateTimeDe(value) {
+    if (!value) return '';
+    var date = new Date(value);
+    if (isNaN(date.getTime())) return String(value);
+    return new Intl.DateTimeFormat('de-DE', {
+      day:'2-digit', month:'2-digit', year:'numeric',
+      hour:'2-digit', minute:'2-digit', hour12:false
+    }).format(date).replace(',', '').trim();
+  }
+
   function groupBy(items, key) {
     return items.reduce(function(acc, item) {
       (acc[item[key]] = acc[item[key]] || []).push(item);
@@ -673,7 +701,7 @@ _UNIVERSAL_WIDGET_JS = r"""/* Betriebsstatus Universal Widget Loader
       })
       .then(function(data) {
         var updated = (data.items && data.items[0] && data.items[0].date_published) || '';
-        var d = updated ? new Date(updated).toLocaleString('de-CH') : '';
+        var d = updated ? formatDateTimeDe(updated) : '';
         var hdr = document.createElement('div');
         hdr.className = 'bss-hdr';
         hdr.innerHTML = '<h3>' + esc(data.title || '') + '</h3>' +
@@ -783,7 +811,7 @@ def build_index_html(tenants: list[dict], pub_date: str, base_url: str) -> str:
 <body>
   <header>
     <h1>Betriebsstatus Jungfrau Region</h1>
-    <p>Zuletzt aktualisiert: {h(pub_date)} &bull; Aktualisierung alle 5 Minuten</p>
+    <p>Zuletzt aktualisiert: {h(format_datetime_de(pub_date))} &bull; Aktualisierung alle 5 Minuten</p>
   </header>
   <main>{cards}
   </main>
@@ -839,7 +867,7 @@ def main() -> None:
     if not tenants:
         raise ValueError("No tenants found in data.")
 
-    pub_date = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+    pub_date = datetime.now(timezone.utc).strftime("%d.%m.%Y %H:%M")
     print(f"Tenants found    : {', '.join(t.get('tenantName','?') for t in tenants)}")
 
     # Universal widget

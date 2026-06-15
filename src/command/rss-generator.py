@@ -159,7 +159,7 @@ def main() -> None:
     output_path = Path(args.output)
 
     tenants = load_input(input_path)
-    pub_date = datetime.now(timezone.utc).isoformat().replace("+00:00", "Z")
+    pub_date = datetime.now(timezone.utc).strftime("%d.%m.%Y %H:%M")
     output_data = build_output(tenants, pub_date)
 
     output_path.parent.mkdir(parents=True, exist_ok=True)
