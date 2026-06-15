@@ -508,8 +508,12 @@ _WIDGET_JS_TEMPLATE = (
     "      '.bss-hdr{background:#1e3a5f;color:#fff;padding:.6rem .9rem;}',\n"
     "      '.bss-hdr h3{margin:0;font-size:1rem;font-weight:600;}',\n"
     "      '.bss-hdr p{margin:.15rem 0 0;font-size:.72rem;opacity:.7;}',\n"
-    "      '.bss-sec h4{margin:0;padding:.4rem .8rem;background:#f1f5f9;',\n"
-    "      'border-bottom:1px solid #e2e8f0;font-size:.78rem;font-weight:600;color:#475569;}',\n"
+    "      '.bss-sec{border-top:1px solid #e2e8f0;}',\n"
+    "      '.bss-sec summary{margin:0;padding:.4rem .8rem;background:#f1f5f9;',\n"
+    "      'font-size:.78rem;font-weight:600;color:#475569;cursor:pointer;list-style:none;}',\n"
+    "      '.bss-sec summary::-webkit-details-marker{display:none;}',\n"
+    "      '.bss-sec summary::after{content:\"+\";float:right;color:#94a3b8;font-weight:700;}',\n"
+    "      '.bss-sec[open] summary::after{content:\"−\";}',\n"
     "      '.bss-list{list-style:none;margin:0;padding:0;}',\n"
     "      '.bss-list li{display:flex;align-items:center;gap:.5rem;padding:.4rem .8rem;',\n"
     "      'border-bottom:1px solid #f1f5f9;}',\n"
@@ -554,8 +558,8 @@ _WIDGET_JS_TEMPLATE = (
     "      var grp = groups[tag];\n"
     "      if (!grp || !grp.length) return;\n"
     "      var open = grp.filter(function(i) { return i._stateRaw === 'open'; }).length;\n"
-    "      html += '<div class=\"bss-sec\"><h4>' + esc(tag) +\n"
-    "              ' <span style=\"font-weight:400;color:#94a3b8\">(' + open + '/' + grp.length + ' offen)</span></h4>' +\n"
+    "      html += '<details class=\"bss-sec\" open><summary>' + esc(tag) +\n"
+    "              ' <span style=\"font-weight:400;color:#94a3b8\">(' + open + '/' + grp.length + ' offen)</span></summary>' +\n"
     "              '<ul class=\"bss-list\">';\n"
     "      grp.forEach(function(item) {\n"
     "        var color = STATUS_COLOR[item._stateRaw] || STATUS_COLOR.unknown;\n"
@@ -566,7 +570,7 @@ _WIDGET_JS_TEMPLATE = (
     "                '<span class=\"bss-state\">' + esc(label) + '</span>' +\n"
     "                '</li>';\n"
     "      });\n"
-    "      html += '</ul></div>';\n"
+    "      html += '</ul></details>';\n"
     "    });\n"
     "    container.innerHTML = html;\n"
     "  }\n"
@@ -659,8 +663,12 @@ _UNIVERSAL_WIDGET_JS = r"""/* Betriebsstatus Universal Widget Loader
       '.bss-hdr{background:#1e3a5f;color:#fff;padding:.6rem .9rem;}',
       '.bss-hdr h3{margin:0;font-size:1rem;font-weight:600;}',
       '.bss-hdr p{margin:.15rem 0 0;font-size:.72rem;opacity:.7;}',
-      '.bss-sec h4{margin:0;padding:.4rem .8rem;background:#f1f5f9;',
-      'border-bottom:1px solid #e2e8f0;font-size:.78rem;font-weight:600;color:#475569;}',
+      '.bss-sec{border-top:1px solid #e2e8f0;}',
+      '.bss-sec summary{margin:0;padding:.4rem .8rem;background:#f1f5f9;',
+      'font-size:.78rem;font-weight:600;color:#475569;cursor:pointer;list-style:none;}',
+      '.bss-sec summary::-webkit-details-marker{display:none;}',
+      '.bss-sec summary::after{content:"+";float:right;color:#94a3b8;font-weight:700;}',
+      '.bss-sec[open] summary::after{content:"−";}',
       '.bss-list{list-style:none;margin:0;padding:0;}',
       '.bss-list li{display:flex;align-items:center;gap:.5rem;padding:.4rem .8rem;',
       'border-bottom:1px solid #f1f5f9;}',
@@ -715,8 +723,8 @@ _UNIVERSAL_WIDGET_JS = r"""/* Betriebsstatus Universal Widget Loader
       var grp = groups[tag];
       if (!grp || !grp.length) return;
       var open = grp.filter(function(i) { return i._stateRaw === 'open'; }).length;
-      html += '<div class="bss-sec"><h4>' + esc(tag) +
-              ' <span style="font-weight:400;color:#94a3b8">(' + open + '/' + grp.length + ' offen)</span></h4>' +
+            html += '<details class="bss-sec" open><summary>' + esc(tag) +
+              ' <span style="font-weight:400;color:#94a3b8">(' + open + '/' + grp.length + ' offen)</span></summary>' +
               '<ul class="bss-list">';
       grp.forEach(function(item) {
         var color = STATUS_COLOR[item._stateRaw] || STATUS_COLOR.unknown;
@@ -727,7 +735,7 @@ _UNIVERSAL_WIDGET_JS = r"""/* Betriebsstatus Universal Widget Loader
                 '<span class="bss-state">' + esc(label) + '</span>' +
                 '</li>';
       });
-      html += '</ul></div>';
+      html += '</ul></details>';
     });
     container.innerHTML = html;
   }

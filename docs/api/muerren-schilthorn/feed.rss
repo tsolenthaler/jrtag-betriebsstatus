@@ -4,14 +4,14 @@
     <title>Betriebsstatus Mürren-Schilthorn</title>
     <link>https://tso-ag.github.io/jrtag-betriebsstatus/operating-status/muerren-schilthorn/</link>
     <description>Betriebsstatus für Mürren-Schilthorn</description>
-    <lastBuildDate>15.06.2026 05:36</lastBuildDate>
+    <lastBuildDate>15.06.2026 11:35</lastBuildDate>
     <atom:link href="https://tso-ag.github.io/jrtag-betriebsstatus/api/muerren-schilthorn/feed.rss" rel="self" type="application/rss+xml"/>
     <item>
       <title>Kandahar</title>
       <link>https://demo.tourismusweb.site/de/index/kandahar-359.html</link>
       <guid isPermaLink="false">359</guid>
-      <pubDate>15.06.2026 05:36</pubDate>
-      <status>preparation</status>
+      <pubDate>15.06.2026 11:35</pubDate>
+      <status>disabled</status>
       <tag>Anlage</tag>
       <sourceTenant>Mürren-Schilthorn</sourceTenant>
       <sourceType>lifts</sourceType>
@@ -21,8 +21,8 @@
       <title>Maulerhubel</title>
       <link>https://demo.tourismusweb.site/de/index/maulerhubel-360.html</link>
       <guid isPermaLink="false">360</guid>
-      <pubDate>15.06.2026 05:36</pubDate>
-      <status>open</status>
+      <pubDate>15.06.2026 11:35</pubDate>
+      <status>disabled</status>
       <tag>Anlage</tag>
       <sourceTenant>Mürren-Schilthorn</sourceTenant>
       <sourceType>lifts</sourceType>
@@ -32,8 +32,8 @@
       <title>Muttleren</title>
       <link>https://demo.tourismusweb.site/de/index/muttleren-361.html</link>
       <guid isPermaLink="false">361</guid>
-      <pubDate>15.06.2026 05:36</pubDate>
-      <status>preparation</status>
+      <pubDate>15.06.2026 11:35</pubDate>
+      <status>disabled</status>
       <tag>Anlage</tag>
       <sourceTenant>Mürren-Schilthorn</sourceTenant>
       <sourceType>lifts</sourceType>
@@ -43,8 +43,8 @@
       <title>Allmiboden</title>
       <link>https://demo.tourismusweb.site/de/index/allmiboden-362.html</link>
       <guid isPermaLink="false">362</guid>
-      <pubDate>15.06.2026 05:36</pubDate>
-      <status>open</status>
+      <pubDate>15.06.2026 11:35</pubDate>
+      <status>disabled</status>
       <tag>Anlage</tag>
       <sourceTenant>Mürren-Schilthorn</sourceTenant>
       <sourceType>lifts</sourceType>
@@ -54,8 +54,8 @@
       <title>Winteregg</title>
       <link>https://demo.tourismusweb.site/de/index/winteregg-363.html</link>
       <guid isPermaLink="false">363</guid>
-      <pubDate>15.06.2026 05:36</pubDate>
-      <status>open</status>
+      <pubDate>15.06.2026 11:35</pubDate>
+      <status>disabled</status>
       <tag>Anlage</tag>
       <sourceTenant>Mürren-Schilthorn</sourceTenant>
       <sourceType>lifts</sourceType>
@@ -65,8 +65,8 @@
       <title>Riggli</title>
       <link>https://demo.tourismusweb.site/de/index/riggli-364.html</link>
       <guid isPermaLink="false">364</guid>
-      <pubDate>15.06.2026 05:36</pubDate>
-      <status>preparation</status>
+      <pubDate>15.06.2026 11:35</pubDate>
+      <status>disabled</status>
       <tag>Anlage</tag>
       <sourceTenant>Mürren-Schilthorn</sourceTenant>
       <sourceType>lifts</sourceType>
@@ -76,8 +76,8 @@
       <title>Schiltgrat</title>
       <link>https://demo.tourismusweb.site/de/index/schiltgrat-365.html</link>
       <guid isPermaLink="false">365</guid>
-      <pubDate>15.06.2026 05:36</pubDate>
-      <status>open</status>
+      <pubDate>15.06.2026 11:35</pubDate>
+      <status>disabled</status>
       <tag>Anlage</tag>
       <sourceTenant>Mürren-Schilthorn</sourceTenant>
       <sourceType>lifts</sourceType>
@@ -87,7 +87,7 @@
       <title>Stechelberg – Gimmelwald</title>
       <link>https://demo.tourismusweb.site/de/index/stechelberg-gimmelwald-366.html</link>
       <guid isPermaLink="false">366</guid>
-      <pubDate>15.06.2026 05:36</pubDate>
+      <pubDate>15.06.2026 11:35</pubDate>
       <status>open</status>
       <tag>Anlage</tag>
       <sourceTenant>Mürren-Schilthorn</sourceTenant>
@@ -98,8 +98,8 @@
       <title>Birg – Schilthorn</title>
       <link>https://demo.tourismusweb.site/de/index/birg-schilthorn-367.html</link>
       <guid isPermaLink="false">367</guid>
-      <pubDate>15.06.2026 05:36</pubDate>
-      <status>preparation</status>
+      <pubDate>15.06.2026 11:35</pubDate>
+      <status>open</status>
       <tag>Anlage</tag>
       <sourceTenant>Mürren-Schilthorn</sourceTenant>
       <sourceType>lifts</sourceType>
@@ -109,7 +109,7 @@
       <title>Gimmelwald – Mürren</title>
       <link>https://demo.tourismusweb.site/de/index/gimmelwald-muerren-369.html</link>
       <guid isPermaLink="false">369</guid>
-      <pubDate>15.06.2026 05:36</pubDate>
+      <pubDate>15.06.2026 11:35</pubDate>
       <status>open</status>
       <tag>Anlage</tag>
       <sourceTenant>Mürren-Schilthorn</sourceTenant>
@@ -120,7 +120,7 @@
       <title>Mürren – Birg</title>
       <link>https://demo.tourismusweb.site/de/index/muerren-birg-370.html</link>
       <guid isPermaLink="false">370</guid>
-      <pubDate>15.06.2026 05:36</pubDate>
+      <pubDate>15.06.2026 11:35</pubDate>
       <status>open</status>
       <tag>Anlage</tag>
       <sourceTenant>Mürren-Schilthorn</sourceTenant>
@@ -131,8 +131,8 @@
       <title>Allmendhubel</title>
       <link>https://demo.tourismusweb.site/de/index/allmendhubel-371.html</link>
       <guid isPermaLink="false">371</guid>
-      <pubDate>15.06.2026 05:36</pubDate>
-      <status>open</status>
+      <pubDate>15.06.2026 11:35</pubDate>
+      <status>disabled</status>
       <tag>Anlage</tag>
       <sourceTenant>Mürren-Schilthorn</sourceTenant>
       <sourceType>lifts</sourceType>
@@ -142,8 +142,8 @@
       <title>Gimmeln</title>
       <link>https://demo.tourismusweb.site/de/index/gimmeln-372.html</link>
       <guid isPermaLink="false">372</guid>
-      <pubDate>15.06.2026 05:36</pubDate>
-      <status>closed</status>
+      <pubDate>15.06.2026 11:35</pubDate>
+      <status>disabled</status>
       <tag>Anlage</tag>
       <sourceTenant>Mürren-Schilthorn</sourceTenant>
       <sourceType>lifts</sourceType>
@@ -153,7 +153,7 @@
       <title>Mürren – Allmendhubel</title>
       <link>https://demo.tourismusweb.site/de/index/muerren-allmendhubel-373.html</link>
       <guid isPermaLink="false">373</guid>
-      <pubDate>15.06.2026 05:36</pubDate>
+      <pubDate>15.06.2026 11:35</pubDate>
       <status>open</status>
       <tag>Anlage</tag>
       <sourceTenant>Mürren-Schilthorn</sourceTenant>
@@ -164,7 +164,7 @@
       <title>Stechelberg – Mürren</title>
       <link>https://demo.tourismusweb.site/de/index/stechelberg-muerren-573.html</link>
       <guid isPermaLink="false">573</guid>
-      <pubDate>15.06.2026 05:36</pubDate>
+      <pubDate>15.06.2026 11:35</pubDate>
       <status>open</status>
       <tag>Anlage</tag>
       <sourceTenant>Mürren-Schilthorn</sourceTenant>

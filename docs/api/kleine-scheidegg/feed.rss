@@ -4,13 +4,13 @@
     <title>Betriebsstatus Kleine Scheidegg</title>
     <link>https://tso-ag.github.io/jrtag-betriebsstatus/operating-status/kleine-scheidegg/</link>
     <description>Betriebsstatus für Kleine Scheidegg</description>
-    <lastBuildDate>15.06.2026 05:36</lastBuildDate>
+    <lastBuildDate>15.06.2026 11:35</lastBuildDate>
     <atom:link href="https://tso-ag.github.io/jrtag-betriebsstatus/api/kleine-scheidegg/feed.rss" rel="self" type="application/rss+xml"/>
     <item>
       <title>Allmend – Wengernalp</title>
       <link>https://demo.tourismusweb.site/de/index/allmend-wengernalp-94.html</link>
       <guid isPermaLink="false">94</guid>
-      <pubDate>15.06.2026 05:36</pubDate>
+      <pubDate>15.06.2026 11:35</pubDate>
       <status>open</status>
       <tag>Anlage</tag>
       <sourceTenant>Kleine Scheidegg</sourceTenant>
@@ -21,7 +21,7 @@
       <title>Alpiglen – Kleine Scheidegg</title>
       <link>https://demo.tourismusweb.site/de/index/alpiglen-kleine-scheidegg-95.html</link>
       <guid isPermaLink="false">95</guid>
-      <pubDate>15.06.2026 05:36</pubDate>
+      <pubDate>15.06.2026 11:35</pubDate>
       <status>open</status>
       <tag>Anlage</tag>
       <sourceTenant>Kleine Scheidegg</sourceTenant>
@@ -32,8 +32,8 @@
       <title>Arven</title>
       <link>https://demo.tourismusweb.site/de/index/arven-96.html</link>
       <guid isPermaLink="false">96</guid>
-      <pubDate>15.06.2026 05:36</pubDate>
-      <status>open</status>
+      <pubDate>15.06.2026 11:35</pubDate>
+      <status>disabled</status>
       <tag>Anlage</tag>
       <sourceTenant>Kleine Scheidegg</sourceTenant>
       <sourceType>lifts</sourceType>
@@ -43,7 +43,7 @@
       <title>Brandegg – Alpiglen</title>
       <link>https://demo.tourismusweb.site/de/index/brandegg-alpiglen-97.html</link>
       <guid isPermaLink="false">97</guid>
-      <pubDate>15.06.2026 05:36</pubDate>
+      <pubDate>15.06.2026 11:35</pubDate>
       <status>open</status>
       <tag>Anlage</tag>
       <sourceTenant>Kleine Scheidegg</sourceTenant>
@@ -54,7 +54,7 @@
       <title>Bumps</title>
       <link>https://demo.tourismusweb.site/de/index/bumps-98.html</link>
       <guid isPermaLink="false">98</guid>
-      <pubDate>15.06.2026 05:36</pubDate>
+      <pubDate>15.06.2026 11:35</pubDate>
       <status>disabled</status>
       <tag>Anlage</tag>
       <sourceTenant>Kleine Scheidegg</sourceTenant>
@@ -65,7 +65,7 @@
       <title>Eigergletscher – Jungfraujoch</title>
       <link>https://demo.tourismusweb.site/de/index/eigergletscher-jungfraujoch-99.html</link>
       <guid isPermaLink="false">99</guid>
-      <pubDate>15.06.2026 05:36</pubDate>
+      <pubDate>15.06.2026 11:35</pubDate>
       <status>open</status>
       <tag>Anlage</tag>
       <sourceTenant>Kleine Scheidegg</sourceTenant>
@@ -76,8 +76,8 @@
       <title>Eigernordwand</title>
       <link>https://demo.tourismusweb.site/de/index/eigernordwand-100.html</link>
       <guid isPermaLink="false">100</guid>
-      <pubDate>15.06.2026 05:36</pubDate>
-      <status>open</status>
+      <pubDate>15.06.2026 11:35</pubDate>
+      <status>disabled</status>
       <tag>Anlage</tag>
       <sourceTenant>Kleine Scheidegg</sourceTenant>
       <sourceType>lifts</sourceType>
@@ -87,8 +87,8 @@
       <title>Figeller</title>
       <link>https://demo.tourismusweb.site/de/index/figeller-102.html</link>
       <guid isPermaLink="false">102</guid>
-      <pubDate>15.06.2026 05:36</pubDate>
-      <status>closed</status>
+      <pubDate>15.06.2026 11:35</pubDate>
+      <status>disabled</status>
       <tag>Anlage</tag>
       <sourceTenant>Kleine Scheidegg</sourceTenant>
       <sourceType>lifts</sourceType>
@@ -98,7 +98,7 @@
       <title>Grindelwald – Grund</title>
       <link>https://demo.tourismusweb.site/de/index/grindelwald-grund-103.html</link>
       <guid isPermaLink="false">103</guid>
-      <pubDate>15.06.2026 05:36</pubDate>
+      <pubDate>15.06.2026 11:35</pubDate>
       <status>open</status>
       <tag>Anlage</tag>
       <sourceTenant>Kleine Scheidegg</sourceTenant>
@@ -109,7 +109,7 @@
       <title>Grindelwald – Kleine Scheidegg</title>
       <link>https://demo.tourismusweb.site/de/index/grindelwald-kleine-scheidegg-104.html</link>
       <guid isPermaLink="false">104</guid>
-      <pubDate>15.06.2026 05:36</pubDate>
+      <pubDate>15.06.2026 11:35</pubDate>
       <status>open</status>
       <tag>Anlage</tag>
       <sourceTenant>Kleine Scheidegg</sourceTenant>
@@ -120,7 +120,7 @@
       <title>Grindelwald Grund – Holenstein</title>
       <link>https://demo.tourismusweb.site/de/index/grindelwald-grund-holenstein-105.html</link>
       <guid isPermaLink="false">105</guid>
-      <pubDate>15.06.2026 05:36</pubDate>
+      <pubDate>15.06.2026 11:35</pubDate>
       <status>open</status>
       <tag>Anlage</tag>
       <sourceTenant>Kleine Scheidegg</sourceTenant>
@@ -131,7 +131,7 @@
       <title>Grindelwald Grund – Männlichen</title>
       <link>https://demo.tourismusweb.site/de/index/grindelwald-grund-maennlichen-106.html</link>
       <guid isPermaLink="false">106</guid>
-      <pubDate>15.06.2026 05:36</pubDate>
+      <pubDate>15.06.2026 11:35</pubDate>
       <status>open</status>
       <tag>Anlage</tag>
       <sourceTenant>Kleine Scheidegg</sourceTenant>
@@ -142,7 +142,7 @@
       <title>Grund – Brandegg</title>
       <link>https://demo.tourismusweb.site/de/index/grund-brandegg-107.html</link>
       <guid isPermaLink="false">107</guid>
-      <pubDate>15.06.2026 05:36</pubDate>
+      <pubDate>15.06.2026 11:35</pubDate>
       <status>open</status>
       <tag>Anlage</tag>
       <sourceTenant>Kleine Scheidegg</sourceTenant>
@@ -153,8 +153,8 @@
       <title>Gummi</title>
       <link>https://demo.tourismusweb.site/de/index/gummi-108.html</link>
       <guid isPermaLink="false">108</guid>
-      <pubDate>15.06.2026 05:36</pubDate>
-      <status>open</status>
+      <pubDate>15.06.2026 11:35</pubDate>
+      <status>disabled</status>
       <tag>Anlage</tag>
       <sourceTenant>Kleine Scheidegg</sourceTenant>
       <sourceType>lifts</sourceType>
@@ -164,7 +164,7 @@
       <title>Holenstein – Männlichen</title>
       <link>https://demo.tourismusweb.site/de/index/holenstein-maennlichen-109.html</link>
       <guid isPermaLink="false">109</guid>
-      <pubDate>15.06.2026 05:36</pubDate>
+      <pubDate>15.06.2026 11:35</pubDate>
       <status>open</status>
       <tag>Anlage</tag>
       <sourceTenant>Kleine Scheidegg</sourceTenant>
@@ -175,8 +175,8 @@
       <title>Honegg</title>
       <link>https://demo.tourismusweb.site/de/index/honegg-110.html</link>
       <guid isPermaLink="false">110</guid>
-      <pubDate>15.06.2026 05:36</pubDate>
-      <status>open</status>
+      <pubDate>15.06.2026 11:35</pubDate>
+      <status>disabled</status>
       <tag>Anlage</tag>
       <sourceTenant>Kleine Scheidegg</sourceTenant>
       <sourceType>lifts</sourceType>
@@ -186,8 +186,8 @@
       <title>Innerwengen</title>
       <link>https://demo.tourismusweb.site/de/index/innerwengen-111.html</link>
       <guid isPermaLink="false">111</guid>
-      <pubDate>15.06.2026 05:36</pubDate>
-      <status>closed</status>
+      <pubDate>15.06.2026 11:35</pubDate>
+      <status>disabled</status>
       <tag>Anlage</tag>
       <sourceTenant>Kleine Scheidegg</sourceTenant>
       <sourceType>lifts</sourceType>
@@ -197,7 +197,7 @@
       <title>Kleine Scheidegg – Eigergletscher</title>
       <link>https://demo.tourismusweb.site/de/index/kleine-scheidegg-eigergletscher-112.html</link>
       <guid isPermaLink="false">112</guid>
-      <pubDate>15.06.2026 05:36</pubDate>
+      <pubDate>15.06.2026 11:35</pubDate>
       <status>open</status>
       <tag>Anlage</tag>
       <sourceTenant>Kleine Scheidegg</sourceTenant>
@@ -208,7 +208,7 @@
       <title>Kleine Scheidegg – Jungfraujoch</title>
       <link>https://demo.tourismusweb.site/de/index/kleine-scheidegg-jungfraujoch-113.html</link>
       <guid isPermaLink="false">113</guid>
-      <pubDate>15.06.2026 05:36</pubDate>
+      <pubDate>15.06.2026 11:35</pubDate>
       <status>open</status>
       <tag>Anlage</tag>
       <sourceTenant>Kleine Scheidegg</sourceTenant>
@@ -219,8 +219,8 @@
       <title>Lauberhorn</title>
       <link>https://demo.tourismusweb.site/de/index/lauberhorn-114.html</link>
       <guid isPermaLink="false">114</guid>
-      <pubDate>15.06.2026 05:36</pubDate>
-      <status>open</status>
+      <pubDate>15.06.2026 11:35</pubDate>
+      <status>disabled</status>
       <tag>Anlage</tag>
       <sourceTenant>Kleine Scheidegg</sourceTenant>
       <sourceType>lifts</sourceType>
@@ -230,7 +230,7 @@
       <title>Lauterbrunnen – Kleine Scheidegg</title>
       <link>https://demo.tourismusweb.site/de/index/lauterbrunnen-kleine-scheidegg-115.html</link>
       <guid isPermaLink="false">115</guid>
-      <pubDate>15.06.2026 05:36</pubDate>
+      <pubDate>15.06.2026 11:35</pubDate>
       <status>open</status>
       <tag>Anlage</tag>
       <sourceTenant>Kleine Scheidegg</sourceTenant>
@@ -241,7 +241,7 @@
       <title>Lauterbrunnen – Wengen</title>
       <link>https://demo.tourismusweb.site/de/index/lauterbrunnen-wengen-116.html</link>
       <guid isPermaLink="false">116</guid>
-      <pubDate>15.06.2026 05:36</pubDate>
+      <pubDate>15.06.2026 11:35</pubDate>
       <status>open</status>
       <tag>Anlage</tag>
       <sourceTenant>Kleine Scheidegg</sourceTenant>
@@ -252,8 +252,8 @@
       <title>Läger</title>
       <link>https://demo.tourismusweb.site/de/index/laeger-117.html</link>
       <guid isPermaLink="false">117</guid>
-      <pubDate>15.06.2026 05:36</pubDate>
-      <status>closed</status>
+      <pubDate>15.06.2026 11:35</pubDate>
+      <status>disabled</status>
       <tag>Anlage</tag>
       <sourceTenant>Kleine Scheidegg</sourceTenant>
       <sourceType>lifts</sourceType>
@@ -263,8 +263,8 @@
       <title>Männlichen</title>
       <link>https://demo.tourismusweb.site/de/index/maennlichen-118.html</link>
       <guid isPermaLink="false">118</guid>
-      <pubDate>15.06.2026 05:36</pubDate>
-      <status>open</status>
+      <pubDate>15.06.2026 11:35</pubDate>
+      <status>disabled</status>
       <tag>Anlage</tag>
       <sourceTenant>Kleine Scheidegg</sourceTenant>
       <sourceType>lifts</sourceType>
@@ -274,8 +274,8 @@
       <title>Männlichen</title>
       <link>https://demo.tourismusweb.site/de/index/maennlichen-119.html</link>
       <guid isPermaLink="false">119</guid>
-      <pubDate>15.06.2026 05:36</pubDate>
-      <status>open</status>
+      <pubDate>15.06.2026 11:35</pubDate>
+      <status>disabled</status>
       <tag>Anlage</tag>
       <sourceTenant>Kleine Scheidegg</sourceTenant>
       <sourceType>lifts</sourceType>
@@ -285,8 +285,8 @@
       <title>Tschuggen</title>
       <link>https://demo.tourismusweb.site/de/index/tschuggen-120.html</link>
       <guid isPermaLink="false">120</guid>
-      <pubDate>15.06.2026 05:36</pubDate>
-      <status>open</status>
+      <pubDate>15.06.2026 11:35</pubDate>
+      <status>disabled</status>
       <tag>Anlage</tag>
       <sourceTenant>Kleine Scheidegg</sourceTenant>
       <sourceType>lifts</sourceType>
@@ -296,7 +296,7 @@
       <title>Wengen – Allmend</title>
       <link>https://demo.tourismusweb.site/de/index/wengen-allmend-121.html</link>
       <guid isPermaLink="false">121</guid>
-      <pubDate>15.06.2026 05:36</pubDate>
+      <pubDate>15.06.2026 11:35</pubDate>
       <status>open</status>
       <tag>Anlage</tag>
       <sourceTenant>Kleine Scheidegg</sourceTenant>
@@ -307,7 +307,7 @@
       <title>Wengen – Männlichen</title>
       <link>https://demo.tourismusweb.site/de/index/wengen-maennlichen-122.html</link>
       <guid isPermaLink="false">122</guid>
-      <pubDate>15.06.2026 05:36</pubDate>
+      <pubDate>15.06.2026 11:35</pubDate>
       <status>open</status>
       <tag>Anlage</tag>
       <sourceTenant>Kleine Scheidegg</sourceTenant>
@@ -318,7 +318,7 @@
       <title>Wengernalp – Kleine Scheidegg</title>
       <link>https://demo.tourismusweb.site/de/index/wengernalp-kleine-scheidegg-123.html</link>
       <guid isPermaLink="false">123</guid>
-      <pubDate>15.06.2026 05:36</pubDate>
+      <pubDate>15.06.2026 11:35</pubDate>
       <status>open</status>
       <tag>Anlage</tag>
       <sourceTenant>Kleine Scheidegg</sourceTenant>
@@ -329,8 +329,8 @@
       <title>Wengiboden</title>
       <link>https://demo.tourismusweb.site/de/index/wengiboden-124.html</link>
       <guid isPermaLink="false">124</guid>
-      <pubDate>15.06.2026 05:36</pubDate>
-      <status>closed</status>
+      <pubDate>15.06.2026 11:35</pubDate>
+      <status>disabled</status>
       <tag>Anlage</tag>
       <sourceTenant>Kleine Scheidegg</sourceTenant>
       <sourceType>lifts</sourceType>
@@ -340,8 +340,8 @@
       <title>Wixi</title>
       <link>https://demo.tourismusweb.site/de/index/wixi-125.html</link>
       <guid isPermaLink="false">125</guid>
-      <pubDate>15.06.2026 05:36</pubDate>
-      <status>open</status>
+      <pubDate>15.06.2026 11:35</pubDate>
+      <status>disabled</status>
       <tag>Anlage</tag>
       <sourceTenant>Kleine Scheidegg</sourceTenant>
       <sourceType>lifts</sourceType>
@@ -351,7 +351,7 @@
       <title>Eiger Express</title>
       <link>https://demo.tourismusweb.site/de/index/eiger-express-165.html</link>
       <guid isPermaLink="false">165</guid>
-      <pubDate>15.06.2026 05:36</pubDate>
+      <pubDate>15.06.2026 11:35</pubDate>
       <status>open</status>
       <tag>Anlage</tag>
       <sourceTenant>Kleine Scheidegg</sourceTenant>
