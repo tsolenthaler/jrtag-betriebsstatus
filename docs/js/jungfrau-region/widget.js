@@ -51,6 +51,7 @@
       .replace(/&/g,'&amp;').replace(/</g,'&lt;')
       .replace(/>/g,'&gt;').replace(/"/g,'&quot;');
   }
+
   function formatDateTimeDe(value) {
     if (!value) return '';
     var date = new Date(value);
@@ -136,5 +137,3 @@
     init();
   }
 }());
-
-
